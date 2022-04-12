@@ -25,6 +25,11 @@ Users should be able to:
 
 ![](./Screenshot.png)
 
+### Links
+
+- [Solution URL](https://www.frontendmentor.io/solutions/advice-generator-Bk2unRz4c)
+- [Live Site URL](https://ai7ga.github.io/fm-advice-generator/)
+
 ## My process
 
 ### Built with

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+:root{
+	--primary-light-cyan: hsl(193, 38%, 86%);
+	--primary-neon-green: hsl(150, 100%, 66%);
+	--neutral-gray-blue: hsl(217, 19%, 38%);
+	--neutral-dark-gray-blue: hsl(217, 19%, 24%);
+	--neutral-dark-blue: hsl(218, 23%, 16%);
+}
+
+html, body{
+	font-family: 'Manrope', Courier, monospace;
+	font-weight: 800;
+	padding: 0px;
+	margin: 0px;
+}
+
+.container{
+	display: flex;
+	background-color: var(--neutral-dark-blue);
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.advice-container{
+	color: var(--primary-light-cyan);
+	background-color: var(--neutral-dark-gray-blue);
+	border-width: 1px;
+	border-style: solid;
+	border-color: var(--primary-neon-green);
+	padding: 3.5rem;
+	border-radius: 2rem;
+	width: 20%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 250px;
+	gap:10px;
+}
+
+.advice-container__advice-counter{
+	color: var(--primary-neon-green);
+	letter-spacing: 4px;
+}
+
+.advice-container__advice {
+	margin: 3rem 0px;
+	height: 10px;
+}
+
+.advice-container__separator {
+	margin: 5rem 0 0 0;
+}
+
+.advice-container__button{
+	transform: translateY(50px);
+}
+.advice-container__button button{
+	background-color: var(--primary-neon-green);
+	border: none;
+	border-radius: 2rem;
+	background-position: center;
+	padding: 1rem;
+	display: flex;
+	cursor: pointer;
+	transition: 0.1s ease-in;
+}
+
+.advice-container__button button:hover {
+	box-shadow: 0px 0px 25px var(--primary-neon-green);
+	transition: 0.1s ease-in;
+}
+
+.advice-container__button button:active .advice-container{
+	box-shadow: 0px 0px 25px var(--primary-neon-green);
+	transition: 0.1s ease-in;
+}
+
+@media screen and (max-width: 450px) {
+		.advice-container__advice-counter {
+			margin-top: 10px;
+		}
+
+		.advice-container{
+			width: 60%;
+		}
+		.advice-container__separator {
+			margin: 5rem 0 0 0;
+		}
+		.advice-container__button {
+			transform: translateY(50px);
+		}
+}
+
+@media screen and (max-width: 950px) {
+	.advice-container__advice-counter {
+		margin-top: 10px;
+	}
+
+	.advice-container {
+		width: 60%;
+	}
+
+	.advice-container__separator {
+		margin: 5rem 0 0 0;
+	}
+
+	.advice-container__button {
+		transform: translateY(50px);
+	}
+}

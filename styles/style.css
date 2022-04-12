@@ -57,7 +57,7 @@ html, body{
 .advice-container__button{
 	transform: translateY(50px);
 }
-.advice-container__button button{
+.advice-container__button div{
 	background-color: var(--primary-neon-green);
 	border: none;
 	border-radius: 2rem;
@@ -68,12 +68,12 @@ html, body{
 	transition: 0.1s ease-in;
 }
 
-.advice-container__button button:hover {
+.advice-container__button div:hover {
 	box-shadow: 0px 0px 25px var(--primary-neon-green);
 	transition: 0.1s ease-in;
 }
 
-.advice-container__button button:active .advice-container{
+.advice-container__button div:active .advice-container{
 	box-shadow: 0px 0px 25px var(--primary-neon-green);
 	transition: 0.1s ease-in;
 }
